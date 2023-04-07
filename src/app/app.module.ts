@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DropDownComponent } from './pages/drop-down/drop-down.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DropDownComponent } from './index';
 
 @NgModule({
   declarations: [AppComponent, DropDownComponent],
