@@ -11,7 +11,7 @@
     "storybook": "ng run drop-down:storybook",
     "build-storybook": "ng run drop-down:build-storybook",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
