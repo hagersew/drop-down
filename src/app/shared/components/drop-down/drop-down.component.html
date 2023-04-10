@@ -1,1 +1,25 @@
-dropdown
+<div
+  class="dropdown-collection"
+  [ngClass]="{ 'dropdown-open': isDropdownOpen }"
+>
+  <button class="dropdown-button" (click)="toggleDropdown()">
+    <span *ngIf="currentValue?.name">{{ currentValue.name }}</span>
+    <span class="placeholder" *ngIf="!currentValue">{{ placeholder }}</span>
+    <img
+      class="icon"
+      src="./../../../../assets/icons/chevron.svg"
+      alt="chevron"
+    />
+  </button>
+  <div class="wrapper">
+    <ul class="dropdown-list">
+      <li
+        [ngClass]="{ selected: currentValue === option }"
+        *ngFor="let option of options"
+        (click)="select(option)"
+      >
+        {{ option?.name }}
+      </li>
+    </ul>
+  </div>
+</div>

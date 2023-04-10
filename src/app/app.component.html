@@ -1,4 +1,8 @@
-<div class="flex justify-center">
-  <drop-down></drop-down>
+<div class="flex justify-center bg-white h-screen">
+  <div class="mt-20">
+    <drop-down
+      [options]="dropdownOptions"
+      (currentValueChange)="dropdownValueChanged($event)"
+    ></drop-down>
+  </div>
 </div>
-<router-outlet></router-outlet>
