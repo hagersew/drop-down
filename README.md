@@ -1,4 +1,8 @@
-# DropDown
+# Custom DropDown
+
+The custom dropdown is a web-based application that allows users to create and customize their own dropdown menus. The application is built using Angular, HTML, SCSS, and Typescript.
+
+The custom dropdown is perfect for web developers who want to add an extra layer of customization to their websites.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
 
