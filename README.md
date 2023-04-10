@@ -4,6 +4,9 @@ The custom dropdown is a web-based application that allows users to create and c
 
 The custom dropdown is perfect for web developers who want to add an extra layer of customization to their websites.
 
+
+<img src="./custom-drop-down.gif">
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
 
 ## Development server
