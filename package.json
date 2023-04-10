@@ -1,6 +1,7 @@
 {
   "name": "drop-down",
   "version": "0.0.0",
+  "homepage": "https://hagersew.github.io/drop-down",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +9,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run drop-down:storybook",
-    "build-storybook": "ng run drop-down:build-storybook"
+    "build-storybook": "ng run drop-down:build-storybook",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +23,7 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "gh-pages": "^5.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
