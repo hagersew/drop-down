@@ -1,7 +1,7 @@
 import { StoryFn, moduleMetadata } from '@storybook/angular';
 import type { Meta } from '@storybook/angular';
 
-import { DropDownComponent } from '../app/shared/components/drop-down/drop-down.component';
+import { DropDownComponent } from '../drop-down.component';
 
 export default {
   title: 'Component/Dropdown',
