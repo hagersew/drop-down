@@ -19,10 +19,12 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"],
+    "paths": {
+      "@dropdown/*": ["./src/app/*"],
+      "@shared/*": ["./src/app/shared/*"],
+      "@assets/*": ["./src/assets/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
