@@ -19,7 +19,7 @@ export class DropDownComponent {
     this.isDropdownOpen = false;
   }
 
-  select(value: any) {
+  select(value: IDropdownOption) {
     this.currentValue = value;
     this.closeDropdown();
     this.currentValueChange.emit(this.currentValue);
