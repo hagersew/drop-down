@@ -8,21 +8,16 @@ import { IDropdownOption } from '@shared/interface/IDropdown';
 })
 export class DropDownComponent {
   @Input() options!: IDropdownOption[];
+  @Input() placeholder: string = 'Select an option';
   @Output() currentValueChange = new EventEmitter();
 
   public currentValue!: IDropdownOption;
   public isDropdownOpen: boolean = false;
 
-  public placeholder: string = 'Select an option';
-
-  closeDropdown() {
-    this.isDropdownOpen = false;
-  }
-
   select(value: IDropdownOption) {
     this.currentValue = value;
-    this.closeDropdown();
     this.currentValueChange.emit(this.currentValue);
+    this.isDropdownOpen = false;
   }
 
   toggleDropdown() {

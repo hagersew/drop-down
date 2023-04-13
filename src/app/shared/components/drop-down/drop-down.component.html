@@ -2,7 +2,13 @@
   class="dropdown-collection"
   [ngClass]="{ 'dropdown-open': isDropdownOpen }"
 >
-  <button class="dropdown-button" (click)="toggleDropdown()">
+  <button
+    class="dropdown-button"
+    (click)="toggleDropdown()"
+    [(ngModel)]="currentValue"
+    (ngModelChange)="currentValueChange.emit($event)"
+    ngDefaultControl
+  >
     <span *ngIf="currentValue?.name">{{ currentValue.name }}</span>
     <span class="placeholder" *ngIf="!currentValue">{{ placeholder }}</span>
     <img
