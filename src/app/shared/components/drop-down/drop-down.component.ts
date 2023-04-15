@@ -1,4 +1,11 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  HostListener,
+  Input,
+  Output,
+} from '@angular/core';
 import { IDropdownOption } from '@shared/interface/IDropdown';
 
 @Component({
@@ -13,6 +20,15 @@ export class DropDownComponent {
 
   public currentValue!: IDropdownOption;
   public isDropdownOpen: boolean = false;
+
+  constructor(private element: ElementRef) {}
+
+  @HostListener('document:mousedown', ['$event'])
+  onGlobalClick(event: MouseEvent): void {
+    if (!this.element.nativeElement.contains(event.target)) {
+      this.isDropdownOpen = false;
+    }
+  }
 
   select(value: IDropdownOption) {
     this.currentValue = value;

@@ -9,11 +9,9 @@
     (ngModelChange)="currentValueChange.emit($event)"
     ngDefaultControl
   >
-    <span
-      test-id="test-id-currentValue"
-      [class.placeholder]="!currentValue"
-      >{{ currentValue ? currentValue.name : placeholder }}</span
-    >
+    <span test-id="test-id-currentValue" [class.placeholder]="!currentValue">{{
+      currentValue ? currentValue.name : placeholder
+    }}</span>
     <img
       class="icon"
       src="./../../../../assets/icons/chevron.svg"
