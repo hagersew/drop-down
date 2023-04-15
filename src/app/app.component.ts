@@ -7,7 +7,7 @@ import { IDropdownOption } from './shared/interface/IDropdown';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  dropdownOptions = [
+   dropdownOptions : IDropdownOption[] = [
     { id: 1, name: 'Option 1' },
     { id: 2, name: 'Option 2' },
     { id: 3, name: 'Option 3' },
