@@ -1,7 +1,10 @@
 {
-  "name": "@hagersew/drop-down",
+  "name": "drop-down",
   "version": "0.0.0",
   "homepage": "https://hagersew.github.io/drop-down",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@hagersew"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
