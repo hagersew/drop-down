@@ -9,8 +9,11 @@
     (ngModelChange)="currentValueChange.emit($event)"
     ngDefaultControl
   >
-    <span *ngIf="currentValue?.name">{{ currentValue.name }}</span>
-    <span class="placeholder" *ngIf="!currentValue">{{ placeholder }}</span>
+    <span
+      test-id="test-id-currentValue"
+      [class.placeholder]="currentValue ? currentValue.name : ''"
+      >{{ currentValue ? currentValue.name : placeholder }}</span
+    >
     <img
       class="icon"
       src="./../../../../assets/icons/chevron.svg"
@@ -18,7 +21,7 @@
     />
   </button>
   <div class="wrapper">
-    <ul class="dropdown-list">
+    <ul test-id="test-id-ul" class="dropdown-list">
       <li
         [ngClass]="{ selected: currentValue === option }"
         *ngFor="let option of options"
