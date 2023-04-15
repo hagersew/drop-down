@@ -8,7 +8,7 @@ export default {
   component: DropDownComponent,
 } as Meta;
 
-const Template: StoryFn<DropDownComponent> = (args: DropDownComponent) => ({
+const Template: StoryFn<DropDownComponent> = (args) => ({
   props: args,
 });
 
@@ -27,4 +27,5 @@ dropdown.args = {
     { id: 10, name: 'Option 10' },
     { id: 11, name: 'Option 11' },
   ],
+  placeholder : 'select Option'
 };
