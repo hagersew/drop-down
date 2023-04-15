@@ -11,7 +11,7 @@
   >
     <span
       test-id="test-id-currentValue"
-      [class.placeholder]="currentValue ? currentValue.name : ''"
+      [class.placeholder]="!currentValue"
       >{{ currentValue ? currentValue.name : placeholder }}</span
     >
     <img
