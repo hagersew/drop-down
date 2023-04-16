@@ -42,10 +42,11 @@ describe('DropDownComponent', () => {
   it('Should show placeholder', fakeAsync(() => {
     const placeholder =
       fixture.debugElement.nativeElement.querySelector(TEST_ID_PLACE_HOLDER);
-    fixture.detectChanges();
-    expect(component.placeholder).toBe(placeholder.innerHTML);
 
     component.placeholder = 'Select';
+    fixture.detectChanges();
+
+    expect(component.placeholder).toBe(placeholder.innerHTML);
     expect(component.placeholder).toBe(placeholder.innerHTML);
   }));
 
