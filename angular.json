@@ -102,6 +102,9 @@
             "outputDir": "storybook-static",
             "assets": ["src/favicon.ico", "src/assets"]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
